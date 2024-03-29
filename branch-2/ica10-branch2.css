@@ -1,1 +1,43 @@
 /* TEAMMATE TWO EDITS THESE STYLES FOR YOUR TASKS */
+.logo {
+    width: 100px;
+    transition: transform 2s;
+}
+
+.logo:hover {
+    transform: rotate(-10deg) scale(1.5);
+}
+
+.logo a:hover{
+    color: green;
+}
+
+
+.center-grid .box-4{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    color: ;
+    font-size: 30px;
+}
+
+.center-grid .box-5{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    color: ;
+    font-size: 30px;
+}
+
+@keyframes myMove{
+    0% {.center-grid .box-4{background-color: green;}}
+    30% {.center-grid .box-5{background-color: green;}}
+    
+}
+
+.center-grid .box-6{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+}
