@@ -8,36 +8,43 @@
     transform: rotate(-10deg) scale(1.5);
 }
 
-.logo a:hover{
+.logo a:hover {
     color: green;
 }
 
-
-.center-grid .box-4{
-    display: grid;
-    align-items: center;
-    text-align: center;
-    color: ;
-    font-size: 30px;
+@keyframes myMove {
+    0%, 100% {background-color: green;}
+    49% {background-color: #333;}
 }
 
-.center-grid .box-5{
-    display: grid;
-    align-items: center;
-    text-align: center;
-    color: ;
-    font-size: 30px;
+@keyframes myMove2{
+    0%, 100% {background-color: #333;}
+    51% {background-color: green;}
 }
 
-@keyframes myMove{
-    0% {.center-grid .box-4{background-color: green;}}
-    30% {.center-grid .box-5{background-color: green;}}
-    
-}
-
-.center-grid .box-6{
+.center-grid .box-4 {
     display: grid;
     align-items: center;
     text-align: center;
     font-size: 30px;
+    color: #333;
+    animation: myMove 3s infinite;
+}
+
+.center-grid .box-5 {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    animation: myMove2 3s infinite;
+}
+
+
+.center-grid .box-6 {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    background-image: linear-gradient(blue, green);
 }
