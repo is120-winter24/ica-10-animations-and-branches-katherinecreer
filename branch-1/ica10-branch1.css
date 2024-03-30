@@ -1,1 +1,79 @@
 /* TEAMMATE ONE EDITS THESE STYLES FOR YOUR TASKS */
+
+.box-1{
+    animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+    
+}
+
+
+.box-2 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2em;
+    margin: 0 auto;
+    color: aliceblue;
+}
+
+.assignment {
+    color:aliceblue;
+    text-decoration: none;
+    background-image: linear-gradient(red, blue);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 0% 3px;
+    transition: background-size 500ms ease-in-out;
+    font-weight: bold;
+}
+
+.assignment:hover {
+    background-size: 100% 3px;
+    color: inherit;
+}
+
+.box-3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 20px;
+    height: 15em;
+    aspect-ratio: 3/2;
+    background-color: #333;
+    color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    animation: slideInOut 12s infinite ease-in-out 5s;
+}
+
+aside span {
+    font-size: 2em;
+}
+
+@keyframes slideInOut {
+
+    0% {
+        transform: translateX(22.5em);
+    }
+
+    20% {
+        transform: translateX(0);
+    }
+
+    80% {
+        transform: translateX(0);
+    }
+    
+    100% {
+        transform: translateX(22.5em);
+    }
+}
